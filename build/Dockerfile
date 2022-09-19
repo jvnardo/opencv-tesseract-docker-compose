@@ -43,13 +43,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     wget \
     apt-transport-https \
-    ca-certificates
+    ca-certificates \
+    tesseract-ocr \
+    libtesseract-dev
 
 # ----------------------------
 # | INSTALL PYTHON LIBRARIES |
 # ----------------------------
 # COPY requirements.txt /
-# RUN pip3 install -r /requirements.txt
+RUN pip3 install pytesseract
 
 # -------------------
 # | SETUP WORKSPACE |
