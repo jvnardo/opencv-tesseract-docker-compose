@@ -16,8 +16,8 @@ services:
       context: build
       dockerfile: Dockerfile
       args:
-        UBUNTU_VERSION: 22.04
-        OPENCV_VERSION: latest
+        UBUNTU_VERSION: 20.04
+        OPENCV_VERSION: 4.5.1
     #devices:
     #  - "/dev/ttyUSB0:/dev/ttyUSB0"
     ipc: host
