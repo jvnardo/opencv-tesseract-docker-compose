@@ -1,8 +1,8 @@
 version: '2.3'
 services:
   opencv:
-    image: minhng/opencv:4.5.1
-    container_name: minhng_opencv
+    image: pachyderm/opencv
+    container_name: image finder
     ports:
       - "10000:8888" # jupyter
     environment:
@@ -15,9 +15,7 @@ services:
     build:
       context: build
       dockerfile: Dockerfile
-      args:
-        UBUNTU_VERSION: 20.04
-        OPENCV_VERSION: 4.5.1
+ 
     #devices:
     #  - "/dev/ttyUSB0:/dev/ttyUSB0"
     ipc: host
