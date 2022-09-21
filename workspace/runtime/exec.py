@@ -1,10 +1,11 @@
+#opencv
 import cv2
 import pytesseract
 import os
-import glob
+import glob,os.path
 
 
-imagems = (glob.glob('*jpg'))
+imagems = (glob.glob('imagens/*'))
 #imagems = (os.listdir ())
 for imagem in imagems:
 	img = cv2.imread(imagem)
