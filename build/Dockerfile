@@ -1,6 +1,4 @@
 # https://hub.docker.com/_/ubuntu/
-ARG UBUNTU_VERSION=20.04
-ARG OPENCV_VERSION=4.5.1
 
 FROM ubuntu:$UBUNTU_VERSION
 
