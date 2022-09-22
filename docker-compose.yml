@@ -2,7 +2,7 @@ version: '2.3'
 services:
   opencv:
     image: pachyderm/opencv
-    container_name: image finder
+    container_name: image_finder
     ports:
       - "10000:8888" # jupyter
     environment:
