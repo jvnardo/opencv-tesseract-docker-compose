@@ -11,6 +11,7 @@ services:
     volumes:
       - ./imagens:/usr/imagens
       - ./workspace:/workspace/
+      #- ./run.sh:/run.sh
     user: root
     build:
       context: build
