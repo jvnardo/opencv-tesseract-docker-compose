@@ -23,8 +23,6 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
 # | INSTALL OPENCV |
 # ------------------
 RUN pip3 install numpy
-COPY opencv.sh /
-RUN sh /opencv.sh
 RUN pip3 install opencv-python
 
 # ---------------------------
