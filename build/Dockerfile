@@ -1,6 +1,6 @@
 # https://hub.docker.com/_/ubuntu/
 
-FROM ubuntu:$UBUNTU_VERSION
+FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 \
