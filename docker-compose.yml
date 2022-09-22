@@ -9,7 +9,8 @@ services:
       jupyter_base_url: /
       jupyter_pass: minh@2021
     volumes:
-      - ./workspace:/workspace
+      - ./imagens:/usr/imagens
+      - ./workspace:/workspace/
       - ./run.sh:/run.sh
     user: root
     build:
