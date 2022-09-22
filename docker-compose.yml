@@ -9,9 +9,9 @@ services:
       jupyter_base_url: /
       jupyter_pass: minh@2021
     volumes:
-      - ./imagens:/usr/imagens
+      - ./image:/usr/image/
       - ./workspace:/workspace/
-      #- ./run.sh:/run.sh
+ 
     user: root
     build:
       context: build
@@ -21,3 +21,4 @@ services:
     #  - "/dev/ttyUSB0:/dev/ttyUSB0"
     ipc: host
     restart: unless-stopped     # or "always"
+
